@@ -3015,6 +3015,7 @@ __metadata:
     prettier: 2.8.8
     react: 18.2.0
     react-native: 0.74.3
+    react-native-screenshot-prevent: ^1.2.1
     react-test-renderer: 18.2.0
     typescript: 5.0.4
   languageName: unknown
@@ -7949,6 +7950,16 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-native-screenshot-prevent@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "react-native-screenshot-prevent@npm:1.2.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 5563adea419627ce1a066495c7779ffdfa85bdb9c180b47eb25215175a02fc4af402bf24cea684d208ae18651df9396fb545998dd3c566afe67f119ecfa62a4a
   languageName: node
   linkType: hard
 

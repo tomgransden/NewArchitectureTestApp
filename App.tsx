@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -25,12 +25,18 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import RNScreenshotPrevent, { addListener } from 'react-native-screenshot-prevent';
+
+
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+
+  RNScreenshotPrevent.enabled(true);
   return (
     <View style={styles.sectionContainer}>
       <Text
